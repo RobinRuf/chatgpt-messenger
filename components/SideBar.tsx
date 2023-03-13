@@ -20,10 +20,6 @@ function SideBar() {
         {/* NewChat */}
         <NewChat />
 
-        <div className='hidden sm:inline'> 
-         <ModelSelection /> 
-        </div>
-
         {loading && (
           <div className='animate-pulse text-center text-white'>
             <p>Loading...</p>
