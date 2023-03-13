@@ -6,7 +6,6 @@ import { collection, query, orderBy } from 'firebase/firestore'
 import { useCollection } from 'react-firebase-hooks/firestore'
 import { db } from '../firebase';
 import ChatRow from '../components/ChatRow'
-import ModelSelection from './ModelSelection'
 
 function SideBar() {
   const { data: session } = useSession();
