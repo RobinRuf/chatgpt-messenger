@@ -20,7 +20,8 @@ function ChatInput({ chatId }: Props) {
 
   const sendMessage = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
-    if (!prompt) return;
+    if (!prompt || null) return;
+    if (!session) return;
 
     const input = prompt.trim();
     setPrompt("");
@@ -29,13 +30,15 @@ function ChatInput({ chatId }: Props) {
       text: input,
       createdAt: serverTimestamp(),
       user: {
-        _id: session?.user?.email!,
-        name: session?.user?.name!,
-        avatar: session?.user?.image! || `https://ui-avatars.com/api/?name=${session?.user?.name}`
+        _id: session?.user?.email || 'undefined',
+        name: session?.user?.name || 'undefined',
+        avatar: session?.user?.image || `https://ui-avatars.com/api/?name=${session?.user?.name}`
       }
     }
 
-    await addDoc(collection(db, 'users', session?.user?.email!, 'chats', chatId, 'messages'),
+    // just added that eslint is ok - fallback is available
+    const email = session?.user?.email || 'undefined'
+    await addDoc(collection(db, 'users', email, 'chats', chatId, 'messages'),
       message
     )
 
