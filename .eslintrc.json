@@ -11,7 +11,9 @@
         "@typescript-eslint"
     ],
     "rules": {
-        "@typescript-eslint/strict-boolean-expressions": "off"
+        "@typescript-eslint/strict-boolean-expressions": "off",
+        "no-unused-expressions": "off",
+        "@typescript-eslint/no-unused-expressions": "error"
     },
     "ignorePatterns": ["src/**/*.test.ts", "src/frontend/generated/*"]
 }
