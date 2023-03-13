@@ -13,11 +13,11 @@ export default async function handler(
 ) {
   const { prompt, chatId, model, session } = req.body;
 
-  if (!prompt || null) {
+  if (!prompt) {
     res.status(400).json({ answer: 'Please provide a prompt' })
   }
 
-  if (!chatId || null) {
+  if (!chatId) {
     res.status(400).json({ answer: 'Please provide a valid chat id' })
   }
 
