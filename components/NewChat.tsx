@@ -9,10 +9,11 @@ import { db } from "../firebase"
 function NewChat() {
   const router = useRouter()
   const { data: session } = useSession()
+  const email = session?.user?.email || 'undefined'
 
   const createNewChat = async() => {
-   const doc = await addDoc(collection(db, 'users', session?.user?.email!, 'chats'), {
-      userId: session?.user?.email!,
+   const doc = await addDoc(collection(db, 'users', email, 'chats'), {
+      userId: email,
       createdAt: serverTimestamp()
     }) 
 

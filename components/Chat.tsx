@@ -13,8 +13,9 @@ type Props = {
 
 function Chat({ chatId }: Props) {
   const { data: session } = useSession();
+  const email = session?.user?.email || 'undefined'
   const [messages] = useCollection(session && query(
-    collection(db, 'users', session?.user?.email!, 'chats', chatId, 'messages'),
+    collection(db, 'users', email, 'chats', chatId, 'messages'),
     orderBy('createdAt', 'asc')
   ))
 
