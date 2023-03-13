@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useSession } from 'next-auth/react'
-import { collection, deleteDoc, doc } from 'firebase/firestore'
+import { collection, deleteDoc, doc, orderBy, query } from 'firebase/firestore'
 import { useCollection } from 'react-firebase-hooks/firestore'
 import { db } from '../firebase'
 
@@ -18,9 +18,10 @@ function ChatRow({ id }: Props) {
   const { data: session } = useSession();
   const [active, setActive] = useState(false);
 
-  const [messages] = useCollection(
-    collection(db, 'users', session?.user?.email!, 'chats', id, 'messages')
-  )
+  const [messages] = useCollection(session && query(
+    collection(db, 'users', session?.user?.email!, 'chats', id, 'messages'),
+    orderBy('createdAt', 'asc')
+  ))
 
   useEffect(() => {
     if (!pathname) return;
