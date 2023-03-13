@@ -24,7 +24,13 @@ function SideBar() {
          <ModelSelection /> 
         </div>
 
-          { /* Map through the Chat-Rows */}
+        {loading && (
+          <div className='animate-pulse text-center text-white'>
+            <p>Loading...</p>
+          </div>
+        )}
+
+        { /* Map through the Chat-Rows */}
         {chats?.docs.map(chat => (
         <ChatRow key={chat.id} id={chat.id} />
         ))}
