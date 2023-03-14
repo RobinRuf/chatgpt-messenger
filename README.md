@@ -11,7 +11,7 @@ So feel free to fork the repo and join as a contributor if you want. But please 
 
 ## Live Demo (free to use)
 Of course I have also deployed this project. Here you can have a look at it and use it for free.</br>
-<a href='https://chatgpt-messenger.app' target='_blank'>Live Demo</a></br></br>
+<a href='https://chatgpt-messenger.app' target="_blank">Live Demo</a></br></br>
 
 ## How to Contribute
 If you find a bug, you can always fix it and then make a pull request. I will then check this in a timely manner and merge if necessary.</br></br>
@@ -34,6 +34,6 @@ For the development version you still need the environment variables. For this t
 
 NEXTAUTH_URL=http://localhost:3000 </br>
 NEXTAUTH_SECRET=here you just need to type in something, doesn't matter </br>
-GOOGLE_ID & GOOGLE_SECRET <a href='https://console.cloud.google.com' target='_blank'>learn more here</a> </br>
-OPEN_API_KEY <a href='https://platform.openai.com/signup' target='_blank'>learn more here</a></br>
-FIREBASE_SERVICE_ACCOUNT_KEY <a href='https://firebase.google.com/docs/admin/setup?authuser=0#initialize_the_sdk_in_non-google_environments' target='_blank'>learn more here</a>
+GOOGLE_ID & GOOGLE_SECRET <a href='https://console.cloud.google.com' target="_blank">learn more here</a> </br>
+OPEN_API_KEY <a href='https://platform.openai.com/signup' target="_blank">learn more here</a></br>
+FIREBASE_SERVICE_ACCOUNT_KEY <a href='https://firebase.google.com/docs/admin/setup?authuser=0#initialize_the_sdk_in_non-google_environments' target="_blank">learn more here</a>
