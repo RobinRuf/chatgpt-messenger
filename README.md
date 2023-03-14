@@ -34,6 +34,6 @@ For the development version you still need the environment variables. For this t
 
 NEXTAUTH_URL=http://localhost:3000 </br>
 NEXTAUTH_SECRET=here you just need to type in something, doesn't matter </br>
-GOOGLE_ID & GOOGLE_SECRET [(learn more here)](https://console.cloud.google.com){:target="_blank"} </br>
-OPEN_API_KEY [(learn more here)](https://platform.openai.com/signup){:target="_blank"}</br>
-FIREBASE_SERVICE_ACCOUNT_KEY [(learn more here)](https://firebase.google.com/docs/admin/setup?authuser=0#initialize_the_sdk_in_non-google_environments){:target="_blank"}
+GOOGLE_ID & GOOGLE_SECRET [(learn more here)](https://console.cloud.google.com){target="_blank"} </br>
+OPEN_API_KEY [(learn more here)](https://platform.openai.com/signup){target="_blank"}</br>
+FIREBASE_SERVICE_ACCOUNT_KEY [(learn more here)](https://firebase.google.com/docs/admin/setup?authuser=0#initialize_the_sdk_in_non-google_environments){target="_blank"}
