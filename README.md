@@ -23,10 +23,10 @@ In an open source project it is always important that everyone understands what 
 
 Therefore, the following rules apply when you make a pull request:</br></br>
 
-For a bug fix:</br>
+### For a bug fix:</br>
 Write 'Bugfix:' without quotes, followed by a short but clear explanation of what you fixed, so it's clear what the bug was.</br></br>
 
-For a feature:</br>
+### For a feature:</br>
 Write 'Feature:' without quotes, followed by a short but clear explanation what your feature does. Note: This only after prior consultation with me!</br></br>
 
 ## Environment Variables
