@@ -1,27 +1,28 @@
-# Next.js + Tailwind CSS Example
+# ChatGPT-Messenger (OpenAi API) 
+Everyone knows ChatGPT by now. It is an AI that answers the user's questions via text output, writes an essay, helps with research and much more.
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+The topic is very interesting, so I thought I could combine this with my job as a software engineer. So I decided to rebuild ChatGPT as a NextJS project.
 
-## Deploy your own
+I will extend this from time to time. The goal is that the user can freely choose if he wants to have a rational or creative answer, if it should be short and concise or very detailed etc.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
+I also thought that I would make this repo public, so that everyone who is interested in contributing to the development of ChatGPT, but unfortunately doesn't work at OpenAi, can at least contribute his ideas here.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
+So feel free to fork the repo and join as a contributor if you want. But please read the guidelines first.
 
-## How to use
+## Live Demo (free to use)
+Of course I have also deployed this project. Here you can have a look at it and use it for free.
+[Live Demo](https://chatgpt-messenger.app)
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## How to Contribute
+If you find a bug, you can always fix it and then make a pull request. I will then check this in a timely manner and merge if necessary.
 
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
+If you have an idea for a feature or something else you would like to add or change, please communicate it with me first. Feel free to contact me for this at any time. If your idea makes sense, you are welcome to put it into action and then make a pull request, which I will merge.
 
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
+## Environment Variables
+For the development version you still need the environment variables. For this the following is needed:
 
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=here you just need to type in something, doesn't matter
+GOOGLE_ID & GOOGLE_SECRET [learn more here](https://console.cloud.google.com)
+OPEN_API_KEY [learn more here](https://platform.openai.com/signup)
+FIREBASE_SERVICE_ACCOUNT_KEY [learn more here](https://firebase.google.com/docs/admin/setup?authuser=0#initialize_the_sdk_in_non-google_environments)
