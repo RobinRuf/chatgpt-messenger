@@ -3,7 +3,7 @@ Everyone knows ChatGPT by now. It is an AI that answers the user's questions via
 
 The topic is very interesting, so I thought I could combine this with my job as a software engineer. So I decided to rebuild ChatGPT as a NextJS project.</br></br>
 
-I will extend this from time to time. The goal is that the user can freely choose if he wants to have a rational or creative answer, if it should be short and concise or very detailed etc.</br></br>
+I will extend this from time to time. The goal is that the user can freely choose if he wants to have a rational or creative answer, if it should be short and concise or very detailed, change model to generate essays, code or do research etc.</br></br>
 
 I also thought that I would make this repo public, so that everyone who is interested in contributing to the development of ChatGPT, but unfortunately doesn't work at OpenAi, can at least contribute his ideas here.</br></br>
 
