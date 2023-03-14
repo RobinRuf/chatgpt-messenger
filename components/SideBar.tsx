@@ -6,6 +6,7 @@ import { collection, query, orderBy } from 'firebase/firestore'
 import { useCollection } from 'react-firebase-hooks/firestore'
 import { db } from '../firebase';
 import ChatRow from '../components/ChatRow'
+import Footer from './Footer'
 
 function SideBar() {
   const { data: session } = useSession();
@@ -31,10 +32,7 @@ function SideBar() {
         ))}
       </div> 
     </div>
-
-      {session && (
-        <img onClick={() => signOut()} src={session.user?.image!} alt='Profile Pic' className='h-12 w-12 rounded-full cursor-pointer mx-auto mb-2 hover:opacity-50' />
-      )}
+    <Footer />
   </div>
 }
 export default SideBar
