@@ -5,6 +5,7 @@ import "../styles/globals.css";
 import { authOptions } from "../pages/api/auth/[...nextauth]";
 import Login from "../components/Login";
 import ClientProvider from "../components/ClientProvider";
+import { Analytics } from '@vercel/analytics/react'
 
 export default async function RootLayout({
   children,
