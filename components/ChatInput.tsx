@@ -3,7 +3,13 @@
 import { PaperAirplaneIcon } from "@heroicons/react/24/solid";
 import { useState } from "react";
 import { useSession } from "next-auth/react";
-import { addDoc, collection, serverTimestamp } from "firebase/firestore";
+import {
+  addDoc,
+  collection,
+  doc,
+  getDoc,
+  serverTimestamp,
+} from "firebase/firestore";
 import { db } from "../firebase";
 import { toast } from "react-hot-toast";
 
@@ -22,6 +28,19 @@ function ChatInput({ chatId }: Props) {
     e.preventDefault();
     if (!prompt) return;
     if (!session) return;
+
+    // if somehow no answerType Settings are there, give default value
+    const answerStyleRef = doc(
+      db,
+      "users",
+      session?.user?.email!,
+      "settings",
+      "answerType"
+    );
+
+    const answerStyleSnapshot = await getDoc(answerStyleRef);
+    const answerStyle = answerStyleSnapshot.data();
+    console.log(answerStyle);
 
     const input = prompt.trim();
     setPrompt("");
@@ -50,9 +69,6 @@ function ChatInput({ chatId }: Props) {
       message
     );
 
-    {
-      /* Toast Notification loading */
-    }
     const notification = toast.loading("ChatGPT is thinking...");
 
     await fetch("/api/askQuestion", {
@@ -65,6 +81,7 @@ function ChatInput({ chatId }: Props) {
         chatId,
         model,
         session,
+        answerStyle,
       }),
     }).then(() => {
       // Toast notification successful
