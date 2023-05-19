@@ -1,3 +1,6 @@
+## Disclaimer
+If you want to try it now on my link, it will gives you the error code 429 probably - that means, that the free trial usage is already consumed/expired. You can still clone/fork this project, register for your own api key and will get a free trial credit for usage. The code works properly. 
+
 # ChatGPT-Messenger (OpenAi API) 
 Everyone knows ChatGPT by now. It is an AI that answers the user's questions via text output, writes an essay, helps with research and much more.</br></br>
 
