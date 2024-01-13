@@ -4,12 +4,14 @@ BUT, you will not get any responses from ChatGPT except a 429 Error.\
 This means, that the free trial (free credits) are consumed and I will not add credits to it.\
 You can fork this and need to use your own OpenAi API Key, then you will also get a $18 credit for free usage (based on 13th January - maybe they will change this later).
 
+
 # ChatGPT-Messenger (OpenAi API) 
 Everyone knows ChatGPT by now. It is an AI that answers the user's questions via text output, writes an essay, helps with research and much more.</br></br>
 
 The topic is very interesting, so I thought I could combine this with my job as a software engineer. So I decided to rebuild ChatGPT as a NextJS project.</br></br>
 
 I will extend this from time to time. The goal is that the user can freely choose if he wants to have a rational or creative answer, if it should be short and concise or very detailed, change model to generate essays, code or do research etc.</br></br>
+
 
 I also thought that I would make this repo public, so that everyone who is interested in contributing to the development of this ChatGPT-Messenger Clone.</br></br>
 
@@ -29,7 +31,6 @@ In an open source project it is always important that everyone understands what 
 
 Therefore, the following rules apply when you make a pull request:</br></br>
 
-### For a bug fix:</br>
 Write 'Bugfix:' or 'fix' without quotes, followed by a short but clear explanation of what you fixed, so it's clear what the bug was.</br></br>
 
 ### For a feature:</br>
